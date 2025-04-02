@@ -11,6 +11,127 @@ html, body {
     max-width: 100%;
 }
 
+/* Loadboard Section */
+.loadboard-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden; 
+    margin-bottom: 100px;
+}
+
+
+.loadboard-left-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw; 
+    height: 100%;
+    background-color: #eaf4f4;
+    z-index: -1; 
+}
+
+.loadboard-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    position: relative; 
+}
+
+
+.loadboard-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.loadboard-left img {
+    max-width: 80%;
+    height: auto;
+}
+
+.loadboard-right {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+.loadboard-right h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.loadboard-right p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Overlapping Search Loads Tab */
+.loadboard-tab {
+    position: absolute;
+    bottom: 40px; 
+    background-color: white;
+    padding: 20px;
+    width: 85%;
+    max-width: 1100px;
+    border-radius: 10px;
+    border: 1px solid hsl(202, 90%, 55%);
+    box-shadow: 0.25rem 0.25rem 0 hsl(202, 90%, 55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loadboard-form {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tab-input-grp {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.loadboard-form .tab-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.loadboard-form .tab-input {
+    padding: 8px ;
+    border: 1px solid #ccc;
+    border-radius: 5px !important;
+    width: 100%;
+}
+
+.loadboard-form .tab-btn {
+    color: #fff;
+    background-color: rgb(0, 99, 153);
+    border-color: rgb(0, 99, 153);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 130px;
+}
+
+
+.loadboard-form button:hover {
+    background-color: rgb(0, 80, 130);
+}
+
+
 /* CO2 Calculator Section */
 .co2-section {
     background-color: hsl(162.5, 69.7%, 94.6%);
