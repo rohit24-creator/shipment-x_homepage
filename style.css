@@ -10,9 +10,71 @@ html, body {
     overflow-x: hidden;
     max-width: 100%;
 }
+/* ai section */
+.email-parser-section {
+    position: relative;
+    margin-inline: 2rem;
+    border-radius: 2rem;
+    padding-block: 3.5rem;
+    padding-inline: 48px;
+    background-color: rgb(47, 55, 73);
+    background-image: url(public/images/circuit-board-and-ai-micro-processor-artificial-i-2025-03-09-19-08-58-utc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+.email-parser-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(220, 42.9%, 16%);
+    opacity: 0.8;
+    z-index: 1;
+}
 
+.email-parser-section {
+    .email-parser-vid {
+        height: auto;
+        width: 50dvw !important; 
+        min-width: 368px; 
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background: #0F2027;
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        background-image: url(../thumbnails/email-parser_5.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
 
+.email-parser-section .container {
+    position: relative;
+    z-index: 2;
+}
 
+/* carriers section */
+.carriers-section{
+    padding: 0 80px;
+    font-family: "Montserrat", sans-serif;
+
+}
+.indeximg {
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 0 6px 18px hsla(0, 0%, 0%, 0.3);
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* intelligent rental section */
 .equipment-rental-section {
     background-color: #ebf8ff;
     border-radius: 24px;
@@ -21,7 +83,6 @@ html, body {
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
   }
-  
   header {
     margin-bottom: 1rem;
   }
@@ -51,8 +112,6 @@ html, body {
   .text-primary {
     color: rgb(0, 99, 153) !important;
   }
-  
-
 /* your carrie section */
 .carrier-section {
     background-color: #FAF9F9;
@@ -114,14 +173,14 @@ html, body {
     max-height: 32rem;
 }
 
-video {
+/* video {
     object-fit: contain;
     width: 448px;
     height: 798px;
     aspect-ratio: 448 / 798;
     background-image: linear-gradient(to right, rgb(44, 83, 100), rgb(32, 58, 67), rgb(15, 32, 39));
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.25rem 0.625rem;
-}
+} */
 
 /* Loadboard Section */
 .loadboard-section {
