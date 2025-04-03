@@ -10,6 +10,49 @@ html, body {
     overflow-x: hidden;
     max-width: 100%;
 }
+
+
+
+.equipment-rental-section {
+    background-color: #ebf8ff;
+    border-radius: 24px;
+    padding: 1rem 1rem;
+    max-width: 75%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  header {
+    margin-bottom: 1rem;
+  }
+  
+  .equipment-description {
+    margin-top: -10px;
+    font-size: 1rem;
+  }
+  
+  .rental-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .feature-item-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .text-primary {
+    color: rgb(0, 99, 153) !important;
+  }
+  
+
 /* your carrie section */
 .carrier-section {
     background-color: #FAF9F9;
