@@ -3,17 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
+    <title>ShipmentX</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
 </head>
 <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="font-family: Montserrat, sans-serif;">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="public/logo/logo.svg" alt="ShipmentX Logo" height="30">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                        Solutions
+                    </a>
+                    <ul class="dropdown-menu solution-menu border-0 shadow-lg" aria-labelledby="solutionsDropdown">
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/tms"><span class="dropdown-item-title">TMS</span>
+                            <p>Comprehensive transportation management system.</p></a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/carrierTMS"><span class="dropdown-item-title">Carrier TMS</span>
+                            <p>Optimized tools for carriers and fleets.</p></a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/visibility"><span class="dropdown-item-title">Visibility</span>
+                            <p>Real-time shipment tracking and insights.</p></a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/erpintegrations"><span class="dropdown-item-title">ERP Integrations</span>
+                            <p>Seamless connection with your ERP systems.</p></a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/financial"><span class="dropdown-item-title">Financials & Settlements</span>
+                            <p>Billing, invoicing, and payment management.</p></a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/aiautomation"><span class="dropdown-item-title">AI Automation</span>
+                            <p>Billing, invoicing, and payment management.</p></a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/tendering"><span class="dropdown-item-title">Tendering</span>
+                            <p>Real-time shipment tracking and insights.</p></a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/loadboards"><span class="dropdown-item-title">Load Boards</span>
+                            <p>Seamless connection with your ERP systems.</p></a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/solutions/claims_management"><span class="dropdown-item-title">Claims Management</span>
+                            <p>Billing, invoicing, and payment management.</p></a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="resourcesDropdown">
+                        <li><a class="dropdown-item" href="https://devanygps.shipmentx.com/">Telematics</a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/case-studies">Case Studies</a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/blog">Blog</a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/events">Events</a></li>
+                        <li><a class="dropdown-item" href="https://www.shipmentx.com/product-news">Product News</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <a id="contactUsBtn" class="btn btn-primary rounded" href="">
+            Contact Us
+        </a>
+    </div>
+</nav>
+
+<!-- tms section -->
+    <section class="tms-section text-center py-5 mt-5" style="font-family:Montserrat, sans-serif ;">
+        <div class="container">
+            <h1 class="fw-light primary-font">Your TMS, Visibility, & Partner network</h1>
+            <span class="d-block h1 text-primary">Together.</span>
+            <a href="#" class="btn btn-primary mt-3">Get Demo</a>
+    
+            <div class="row mt-5 bg-light-blue rounded-5 py-4">
+                <div class="col-md-4">
+                    <article class="card bg-transparent border-0">
+                        <div class="card-body feature-card">
+                            <h2 class="card-title text-center h5 secondary-font m-0">
+                                Seamless communication
+                            </h2>
+                            <img class="feature-card__img card-img img-fluid mx-auto" 
+                                src="https://www.shipmentx.com/assets/images/sh-communication.png" 
+                                width="394" height="276" 
+                                alt="seamless communication between supply chain stakeholders">
+                            <p class="card-text text-center secondary-font m-0">
+                                Effortlessly streamline your stakeholder communication with TMS, leaving no vital 
+                                information overlooked.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+    
+                <div class="col-md-4">
+                    <article class="card bg-transparent border-0">
+                        <div class="card-body feature-card">
+                            <h2 class="card-title text-center h5 secondary-font m-0">
+                                Extended visibility
+                            </h2>
+                            <img class="feature-card__img card-img img-fluid mx-auto" 
+                                src="https://www.shipmentx.com/assets/images/sh-visibility.png" 
+                                width="394" height="276" 
+                                alt="Extended visibility in supply chain">
+                            <p class="card-text text-center secondary-font m-0">
+                                Unveil the Dynamics of Your Entire Supply Chain in Real-Time with our extended 
+                                visibility capabilities.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+    
+                <div class="col-md-4">
+                    <article class="card bg-transparent border-0">
+                        <div class="card-body feature-card">
+                            <h2 class="card-title text-center h5 secondary-font m-0">
+                                Easy integrations
+                            </h2>
+                            <img class="feature-card__img card-img img-fluid mx-auto" 
+                                src="https://www.shipmentx.com/assets/images/sh-integrations.png" 
+                                width="394" height="276" 
+                                alt="Easy integrations with TMS">
+                            <p class="card-text text-center secondary-font m-0">
+                                Conveniently manage loads, rate quotes, and tracking in one place with 
+                                ERP and warehouse integrations.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    
         <!-- Shippers section-->
 <section class="container carriers-section my-5 ">
     <h2 class="text-center mb-5">Shippers</h2>
@@ -591,8 +720,5 @@
             </div>
         </div>
     </footer>
-    
-    
-    
 </body>
 </html>
