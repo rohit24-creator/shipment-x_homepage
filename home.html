@@ -591,81 +591,101 @@
     
 
 
-<!-- contact us section -->
-    <section class="contact-section">
-        <div class="contact-container">
+    <section class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+        <div class="container">
+        <div class="d-grid mx-auto contact-grid">
+
+                    <!-- Left Column -->
+        <div class="contact-info text-white rounded-4 py-5 px-4">
+            <div class="bg-overlay rounded-4"></div>
             
-            <!-- Left Column -->
-            <div class="contact-info">
-                <h2 class="heading-info">Simplifying your Supply Chains</h2>
-                <p class="subtitle">with smart next-gen logistics solutions.</p>
-    
-                <div class="info-box">
-                    <div class="icon-circle"><i class="fas fa-cogs"></i></div>
-                    <div>
-                        <h4>Seamless ERP Integrations</h4>
-                        <p>Connect your ERP to ShipmentX through our <br> API integration solution to get started instantly.</p>
-                    </div>
+            <div class="content-wrapper">
+            <h2>Simplifying your Supply Chains</h2>
+            <p class="mb-4 h5">with smart next-gen logistics solutions.</p>
+        
+            <div class="d-flex align-items-start gap-3 mb-4">
+                <div class="icon-circle">
+                <i class="fas fa-cogs fa-lg"></i>
                 </div>
-    
-                <div class="info-box">
-                    <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
-                    <div>
-                        <h4>Data-Driven Insights</h4>
-                        <p>Make data-driven business decisions by <br> accessing powerful predictive analytics and <br> advanced actionable insights.</p>
-                    </div>
-                </div>
-    
-                <div class="info-box">
-                    <div class="icon-circle"><i class="fas fa-robot"></i></div>
-                    <div>
-                        <h4>AI & Automation</h4>
-                        <p>Leverage the power of AI & RPA to automate <br> repetitive tasks such as validating POs, invoices <br> and many more.</p>
-                    </div>
+                <div>
+                <h5 class="mb-1">Seamless ERP Integrations</h5>
+                <p class="mb-0">Connect your ERP to ShipmentX through our API integration solution.</p>
                 </div>
             </div>
+        
+            <div class="d-flex align-items-start gap-3 mb-4">
+                <div class="icon-circle">
+                <i class="fas fa-chart-line fa-lg"></i>
+                </div>
+                <div>
+                <h5 class="mb-1">Data-Driven Insights</h5>
+                <p class="mb-0">Access predictive analytics and advanced insights for smart decisions.</p>
+                </div>
+            </div>
+        
+            <div class="d-flex align-items-start gap-3">
+                <div class="icon-circle">
+                <i class="fas fa-robot fa-lg"></i>
+                </div>
+                <div>
+                <h5 class="mb-1">AI & Automation</h5>
+                <p class="mb-0">Leverage AI & RPA to automate repetitive tasks such as validating POs & invoices.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        
     
             <!-- Right Column -->
-            <div class="contact-form">
-                <h2 style="font-weight: 550;" class="heading-form">Get in Touch with ShipmentX!</h2>
-                
-                <form >
-                    <label for="fullname" class="pt-3">Full Name<span class="star">*</span></label>
-                    <input type="text" required>
+            <div class="py-4 px-5 bg-white border-blue border rounded-4 contact-form">
+            <h1 class="fw-semibold hs-richtext pt-4 pb-3  mb-4">Get in Touch with ShipmentX!</h1>
+            
+            <form>
+                <div class="mb-3">
+                <label class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control hs-input w-100" required>
+                </div>
     
-                    <div class="input-row">
-                        <div>
-                            <label for="email">Business Email<span class="star">*</span></label>
-                            <input type="email" required >
-                        </div>
-                        <div>
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" >
-                        </div>
-                    </div>
+                <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Business Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control hs-input w-100" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control hs-input w-100">
+                </div>
+                </div>
     
-                    <label for="reason">Reason For Contact<span class="star">*</span></label>
-                    <select>
-                        <option>Please Select</option>
-                        <option>Schedule a Demo</option>
-                        <option>Product Inquiry</option>
-                        <option>Request for Support</option>
-                        <option>Other</option>
-                    </select>
+                <div class="mb-3">
+                <label class="form-label">Reason For Contact <span class="text-danger">*</span></label>
+                <select class="form-select hs-input w-100" required>
+                    <option selected disabled>Please Select</option>
+                    <option>Schedule a Demo</option>
+                    <option>Product Inquiry</option>
+                    <option>Request for Support</option>
+                    <option>Other</option>
+                </select>
+                </div>
     
-                    <label for="message">Message</label>
-                    <textarea rows="3"></textarea>
+                <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control hs-input w-100" rows="3"></textarea>
+                </div>
     
-                    <label for="file">Attach a File</label>
-                    <input type="file">
+                <div class="mb-3">
+                <label class="form-label">Attach a File</label>
+                <input type="file" class="  w-100 file-input native-file-input">
+                </div>
     
-                    <button type="submit">Submit</button>
-                </form>
+                <button type="submit" class="btn btn-primary btn-contact fw-bold rounded-pill px-4 mt-5">Submit</button>
+            </form>
             </div>
-    
+            
+        </div>
         </div>
     </section>
-
+    
 <!-- footer -->
     <footer class="footer">
         <div class="footer-container">

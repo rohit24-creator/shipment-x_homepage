@@ -488,159 +488,124 @@ html, body {
 }
 
 
-/* Contact Section */
-.contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 40px 0;
-}
-
-.contact-container {
-    display: flex;
-    width: 80%; 
-    max-width: 1100px; 
-    border-radius: 12px;
-    /* overflow: hidden;  */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    gap: 30px; 
-}
 
 
-.contact-info {
-    flex: 1;
-    padding: 40px;
-    background: hsl(202, 80.5%, 34.1%);
-    opacity: 10;
-    color: white;
-    border-radius: 12px;
+/* contact us section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto; /* Center the grid */
+  }
+  
+
+  .contact-info {
+    background-color: hsl(202, 80.5%, 34.1%);
+    width: 539px;
+    height: 678.6px;
     position: relative;
-    font-family: "Montserrat", sans-serif;
-}
-
-.contact-info::before {
-    content: "";
+    overflow: hidden;
+  }
+  
+  .bg-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('public/images/pexels-markie-mad-336302786-14048025.jpg') center/cover;
+    background: url('public/images/pexels-markie-mad-336302786-14048025.jpg') center/cover no-repeat;
     opacity: 0.1;
     z-index: 0;
-}
-
-.contact-info .heading-info {
-    font-size: 24px;
-    margin-bottom: 8px;
+    border-radius: 1rem;
+  }
+  
+  .contact-info .content-wrapper {
     position: relative;
     z-index: 1;
-}
+  }
+  
+  
+ 
+  .contact-form {
+    width: 539px;
+    height: 678.6px;
+    font-family: Montserrat;
+  }
+  
 
-.contact-info .subtitle {
+  .hs-input {
+    height: 40px;
+    padding: 0 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-}
+    color: #33475b;
+    border: 1px solid #cbd6e2;
+    box-sizing: border-box;
+    background-color: #f5f8fa;
+    border-radius: 13px;
+  }
+  
 
+  .native-file-input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #33475b;
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  
+ 
+  textarea.hs-input {
+    height: 65.6px !important;
+  }
+  
 
-.info-box {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 40px;
-    position: relative;
-    z-index: 1;
-}
+  .form-label {
+    color: #1d283a;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
 
-.icon-circle {
-    width: 80px;
-    height: 80px;
+  .hs-richtext {
+    margin-bottom: 3px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    font-size: 28px;
+    color: #33475b;
+  }
+  
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
     background: white;
+    color: hsl(202, 80.5%, 34.1%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.icon-circle i {
-    font-size: 30px;
-    color: hsl(202, 80.5%, 34.1%);
-}
-
-.contact-form {
-    flex: 1;
-    background: white;
-    padding: 40px;
-    border: 1px solid hsl(201, 100%, 40%);
-    border-radius: 12px;
-}
-
-.contact-form .heading-form {
-    color: #33475b;
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    display: block;
-    margin-top: 10px;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cbd6e2;
-    background: #f5f8fa;
-    border-radius: 13px;
-    font-size: 14px;
-}
-
-
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-    border-color: hsl(201, 100%, 40%); 
+  }
+  
+  .hs-input:focus,
+  .hs-input:focus-visible,
+  .hs-input:focus-within {
+    border-color: hsl(201, 100%, 40%);
+    box-shadow: none;
     outline: none;
+  }
+  
+  .border-blue {
+    border-color: hsl(201, 100%, 40%) !important;
 }
-
-.input-row {
-    display: flex;
-    gap: 10px;
+.btn-contact{
+    font-size: 12px;
 }
-
-.input-row div {
-    flex: 1;
-}
-
-input[type="file"] {
-    border: none;
-    padding: 5px;
-}
-
-button {
-    background: #006397;
-    color: white;
-    padding: 8px;
-    border: none;
-    border-radius: 13px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 15px;
-    width: 100px;
-}
-
-button:hover {
-    background: #004d73;
-}
-
-
-
-
-
 
 /* footer */
 .footer {
