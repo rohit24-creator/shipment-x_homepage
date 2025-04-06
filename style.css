@@ -9,8 +9,16 @@ html, body {
     box-sizing: border-box;
     overflow-x: hidden;
     max-width: 100%;
+    font-family: "Montserrat", sans-serif;
 }
 
+.section-para{
+    max-width: 496px;
+    width: 100%;
+    font-size: 1.125rem;
+}
+
+/* navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -117,10 +125,10 @@ html, body {
 .ltl-tab .form-control {
     border-color: #cbd6e2;
     background-color: #f5f8fa;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
 }
 .ltl-tab .form-control:focus {
-    border-color: hsl(202, 90%, 55%);
+    border-color: hsl(202, 90%, 55%) !important;
     box-shadow: none;
     outline: none;
 }
@@ -137,7 +145,9 @@ html, body {
     display: flex;
     align-items: center;
 }
-
+.ltl-tab .form-control {
+  border-color: hsl(210, 14%, 65%) !important;
+}
 /* ai section */
 .email-parser-section {
     position: relative;
@@ -301,191 +311,169 @@ html, body {
     max-height: 32rem;
 }
 
-/* video {
-    object-fit: contain;
-    width: 448px;
-    height: 798px;
-    aspect-ratio: 448 / 798;
-    background-image: linear-gradient(to right, rgb(44, 83, 100), rgb(32, 58, 67), rgb(15, 32, 39));
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.25rem 0.625rem;
-} */
 
-/* Loadboard Section */
-.loadboard-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    position: relative;
-    overflow: hidden; 
-    margin-bottom: 100px;
+/* Custom Light Teal BG */
+.bg-teal-100 {
+    background-color: #eaf4f4;
+  }
+  .fw-loadboard-normal{
+    font-weight: 300;
+  }
+  
+  .para-title {
+    font-weight: 400;
+}
+.loadboard-para {
+    font-size: 1.125rem;
+}
+h4, .h4 {
+    font-size: 1.5rem;
+}
+.loadboard-text-wrapper {
+    max-width: 479px;
+    width: 100%;
+  }
+
+  .loadboard-title {
+    font-size: 2.5rem;
+}
+.loadboard-ltl-tab .form-control {
+    border-color: hsl(210, 14%, 65%) !important;
+}
+  
+  .origin-input,
+.destination-input {
+  width: 329px;
 }
 
-
-.loadboard-left-bg {
+.range-input {
+  width: 230px;
+}
+  
+  /* Fix for overlapping tab */
+  @media (max-width: 768px) {
+    .loadboard-tab {
+      position: static !important;
+      transform: none !important;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .loadboard-ltl-tab {
+      position: static !important;
+      transform: none !important;
+      margin-top: 2rem;
+      width: 100% !important;
+      box-shadow: none;
+      border-radius: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  
+  .loadboard-section {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+  }
+  
+  .loadboard-left-bg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50vw; 
     height: 100%;
+    width: 50%;
     background-color: #eaf4f4;
-    z-index: -1; 
-}
-
-.loadboard-container {
-    display: flex;
-    width: 80%;
-    max-width: 1200px;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 100px;
-    position: relative; 
-}
-
-
-.loadboard-left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-.loadboard-left img {
-    max-width: 80%;
-    height: auto;
-}
-
-.loadboard-right {
-    flex: 1;
-    padding: 20px 40px;
-}
-
-.loadboard-right h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.loadboard-right p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Overlapping Search Loads Tab */
-.loadboard-tab {
+    z-index: 0;
+  }
+  
+  .loadboard-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .loadboard-ltl-tab {
     position: absolute;
-    bottom: 40px; 
-    background-color: white;
-    padding: 20px;
-    width: 85%;
-    max-width: 1100px;
-    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
     border: 1px solid hsl(202, 90%, 55%);
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+    width: 85%;
     box-shadow: 0.25rem 0.25rem 0 hsl(202, 90%, 55%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.loadboard-form {
-    display: flex;
-    gap: 15px;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.tab-input-grp {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.loadboard-form .tab-label {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.loadboard-form .tab-input {
-    padding: 8px ;
-    border: 1px solid #ccc;
-    border-radius: 5px !important;
-    width: 100%;
-}
-
-.loadboard-form .tab-btn {
+    bottom: -9rem; 
+    z-index: 5;
+  }
+  
+  .loadboard-ltl-tab .form-control {
+    border-color: #cbd6e2;
+    background-color: #f5f8fa;
+    border-radius: 0.25rem;
+  }
+  .loadboard-ltl-tab .form-control:focus {
+    border-color: hsl(202, 90%, 55%) !important;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .loadboard-ltl-tab .btn-primary {
     color: #fff;
     background-color: rgb(0, 99, 153);
     border-color: rgb(0, 99, 153);
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: 600;
-    width: 130px;
-}
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+  }
+  
+  .loadboard-ltl-tab .btn-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
 
 
-.loadboard-form button:hover {
-    background-color: rgb(0, 80, 130);
-}
-
-
-/* CO2 Calculator Section */
+/* co2 section */
 .co2-section {
     background-color: hsl(162.5, 69.7%, 94.6%);
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.co2-container {
-    display: flex;
-    width: 80%;
-    max-width: 1200px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.co2-text {
-    flex: 1;
-    max-width: 50%;
-}
-
-.co2-text .heading-co2 {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.co2-text .subtitle {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.co2-text p {
-    font-size: 16px;
+  }
+  
+  .container.custom-padding {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  
+  .co2-text {
+    max-width: 570px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .description {
+    font-size: 1.125rem;
     line-height: 1.6;
     color: #333;
-    /* max-width: 450px; */
-}
-
-.co2-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    max-width: 50%;
-}
-
-.co2-image img {
+    max-width: 540px;
+  }
+  
+  .co2-image {
+    max-width: 570px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .co2-image img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.10); 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.10);
     border-radius: 10px;
-}
+  }
+  
 
 
 
@@ -496,7 +484,7 @@ html, body {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     max-width: 1100px;
-    margin: 0 auto; /* Center the grid */
+    margin: 0 auto; 
   }
   
 
@@ -525,7 +513,9 @@ html, body {
     z-index: 1;
   }
   
-  
+.fw-normal{
+    font-weight: 400 !important;
+}
  
   .contact-form {
     width: 539px;
@@ -582,14 +572,20 @@ html, body {
   
 
   .icon-circle {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background: white;
     color: hsl(202, 80.5%, 34.1%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0; 
+    min-height: 36px;
+  }
+  
+  .icon-circle i {
+    font-size: 28px;
   }
   
   .hs-input:focus,
