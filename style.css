@@ -306,6 +306,39 @@ html, body {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 768px) {
+  .carriers-section {
+    padding: 0.5rem 1rem;
+  }
+
+  .carriers-section h2 {
+    font-size: 1.6875rem;
+  }
+
+  .carriers-section h3 {
+    font-size: 1.4375rem;
+  }
+
+  .section-para {
+    font-size: 1rem; 
+  }
+
+  .carriers-section .img-fluid {
+    width: 21.5625rem; 
+    height: 10.0625rem; 
+    object-fit: cover;
+    display: block;
+    margin: 1rem auto;
+  }
+  .carriers-section .mb-5 {
+    margin-bottom: 1.5rem !important; 
+  }
+
+  .carriers-section.my-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
 
 
 /* intelligent rental section */
