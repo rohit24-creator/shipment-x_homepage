@@ -197,13 +197,14 @@ html, body {
       display: flex;
       align-items: center;
       font-size: 1.1rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1rem;
     }
   }
 
   .ltl-logos {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.5rem;
 
     img {
       margin-right: 1rem;
@@ -270,6 +271,12 @@ html, body {
     max-width: 100%;
     margin: 0;
     margin-bottom: 2rem;
+  }
+
+  .ltl-logos{
+    gap: 1.5rem !important;
+    margin-left: 36px;
+    margin-bottom: 20px;
   }
 
   .ltl-tab {
@@ -1015,7 +1022,6 @@ html, body {
       flex-direction: column;
       align-items: center;
     }
-    
   }
 
 
