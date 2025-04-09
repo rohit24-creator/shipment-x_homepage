@@ -12,30 +12,22 @@
   --gray-muted: #cbd6e2;
   --blue-strong: hsl(202, 80.5%, 34.1%);
   --blue-bold: hsl(201, 100%, 40%);
+  --Montserrat-font: "Montserrat", sans-serif;
 }
 
-body {
+
+html, body {
+    font-family: var(--Montserrat-font);
     background-color: var(--white);
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    max-width: 100%;
-    font-family: "Montserrat", sans-serif;
-}
-
 .section-para{
-    max-width: 496px;
-    width: 100%;
+    max-width: 31rem;
     font-size: 1.125rem;
 }
 .btn-primary:hover {
   background: #004d73;
 }
-
 
 /* navbar */
 .navbar {
@@ -264,6 +256,7 @@ html, body {
     }
   }
 }
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .ltl-section {
@@ -273,32 +266,32 @@ html, body {
     margin-bottom: 2rem;
   }
 
-  .ltl-logos{
+  .ltl-logos {
     gap: 1.5rem !important;
-    margin-left: 36px;
-    margin-bottom: 20px;
+    margin-left: 2.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .ltl-tab {
     position: relative !important;
-    width: 343px !important;
-    min-height: 420px !important;
+    width: 21.4375rem !important;
+    min-height: 26.25rem !important;
     left: 0;
     transform: none;
     margin: 1rem auto 0;
     box-shadow: none;
-    padding: 1.2rem; 
+    padding: 1.2rem;
   }
 
   .ltl-form-group {
-    width: 263px;
+    width: 16.4375rem;
     margin: 0 auto 1rem auto;
   }
 
-  .ltl-tab h5 { 
-    width: 263px; 
-    margin: 0 auto 2rem auto; 
-    text-align: left; 
+  .ltl-tab h5 {
+    width: 16.4375rem;
+    margin: 0 auto 2rem auto;
+    text-align: left;
   }
 
   .ltl-tab .row {
@@ -306,35 +299,37 @@ html, body {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    padding: 0; 
+    padding: 0;
   }
 
   .ltl-tab .col-auto {
-    width: 263px !important;
+    width: 16.4375rem !important;
     margin: 0 auto;
     text-align: left;
-    padding: 0 !important; 
+    padding: 0 !important;
   }
 
   .ltl-tab .origin-input-ltl,
   .ltl-tab .destination-input-ltl,
   .ltl-tab .weight-input,
   .ltl-tab .btn-primary {
-    width: 263px !important; 
-    height: 38px !important; 
+    width: 16.4375rem !important;
+    height: 2.375rem !important;
     margin: 0 auto;
     display: block;
   }
 
   .ltl-tab .btn-wrapper {
-    margin-top: 1rem; 
-    justify-content: center; 
+    margin-top: 1rem;
+    justify-content: center;
   }
+
   .ltl-section .container {
     padding-left: 0;
     padding-right: 0;
   }
 }
+
 
 
 /* ai section */
@@ -370,7 +365,7 @@ html, body {
 .ai-container {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
+  max-width: 75rem; 
   margin: 0 auto;
 }
 
@@ -386,7 +381,7 @@ html, body {
 }
 
 .ai-section-para {
-  max-width: 496px;
+  max-width: 31rem;
   width: 100%;
   font-size: 1.125rem;
 }
@@ -546,7 +541,7 @@ html, body {
     align-items: center;
     gap: 0.5rem; 
 
-    i {
+    .primary-color {
       color: hsl(202, 90%, 40%);
     }
 
@@ -604,8 +599,8 @@ html, body {
   }
 
   .mobile-app-vid {
-    width: 345px;
-    height: 480px;
+    width: 21.5625rem;
+    height: 30rem;
     max-height: none; 
   }
   .carrier-section .container {
@@ -720,24 +715,6 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .loadboard-tab {
-    position: static !important;
-    transform: none !important;
-    margin-top: 2rem;
-    width: 100% !important;
-    box-shadow: none;
-    border-radius: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.loadboard-tab {
-  .form-control {
-    border-color: var(--gray-border) !important;
-  }
-}
-@media (max-width: 768px) {
   .loadboard-section {
     padding: 0.5rem 1rem;
 
@@ -770,8 +747,8 @@ html, body {
   .loadboard-tab {
     position: static !important;
     transform: none !important;
-    width: 345px !important;
-    height: 362px;
+    width: 21.5625rem!important;
+    height: 22.625rem;
     margin: 2rem auto 0 auto;
     border-radius: 1.2rem;
     padding: 1.2rem;
@@ -780,12 +757,13 @@ html, body {
     .form-control {
       height: 38px;
       width: 100% !important;
+      border-color: var(--gray-border) !important;
     }
 
     .origin-input,
     .destination-input,
     .range-input {
-      width: 302px !important;
+      width: 	18.875rem !important;
     }
 
     .btn-wrapper {
@@ -794,7 +772,7 @@ html, body {
 
       .btn-primary {
         width: 100%;
-        height: 37px;
+        height: 2.3125rem;
         font-size: 1rem;
         padding: 0.5rem 0.5rem;
         margin-top: 0.5rem;
@@ -860,19 +838,18 @@ html, body {
 
 
 
-
 /* contact us section */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
-  max-width: 1100px;
+  max-width: 68.75rem;
   margin: 0 auto;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     row-gap: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     display: flex;
     flex-direction: column;
 
@@ -887,13 +864,13 @@ html, body {
     }
 
     .icon-circle {
-      width: 60px;
-      height: 60px;
-      font-size: 20px;
+      width: 3.75rem;
+      height: 3.75rem;
+      font-size: 1.25rem;
     }
 
     .hs-richtext {
-      font-size: 22px;
+      font-size: 1.375rem;
       line-height: 1.4;
     }
 
@@ -906,8 +883,8 @@ html, body {
 
 .contact-info {
   background-color: var(--blue-strong);
-  width: 539px;
-  height: 678.6px;
+  width: 33.6875rem;
+  height: 42.4125rem;
   position: relative;
   overflow: hidden;
 
@@ -934,21 +911,21 @@ html, body {
 }
 
 .contact-form {
-  width: 539px;
-  height: 678.6px;
+  width: 33.6875rem;
+  height: 42.4125rem;
   font-family: Montserrat;
 }
 
 .hs-input {
-  height: 40px;
-  padding: 0 15px;
+  height: 2.5rem;
+  padding: 0 0.9375rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #33475b;
   border: 1px solid var(--gray-muted);
   box-sizing: border-box;
   background-color: var(--white-lighter);
-  border-radius: 13px;
+  border-radius: 0.8125rem;
 
   &:focus,
   &:focus-visible,
@@ -960,12 +937,12 @@ html, body {
 }
 
 textarea.hs-input {
-  height: 65.6px !important;
+  height: 4.1rem !important;
 }
 
 .native-file-input {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #33475b;
   border: none;
   background: none;
@@ -975,22 +952,22 @@ textarea.hs-input {
 
 .form-label {
   color: #1d283a;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 .hs-richtext {
-  margin-bottom: 3px;
+  margin-bottom: 0.1875rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 24px;
-  font-size: 28px;
+  line-height: 1.5rem;
+  font-size: 1.75rem;
   color: #33475b;
 }
 
 .icon-circle {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   background: var(--white);
   color: var(--blue-strong);
   border-radius: 50%;
@@ -998,10 +975,10 @@ textarea.hs-input {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  min-height: 36px;
+  min-height: 2.25rem;
 
-  i {
-    font-size: 28px;
+  .contact-icons {
+    font-size: 2.3125rem !important;
   }
 }
 
@@ -1010,12 +987,13 @@ textarea.hs-input {
 }
 
 .btn-contact {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .star {
   color: red;
 }
+
 
 
 
