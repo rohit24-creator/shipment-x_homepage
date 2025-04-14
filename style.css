@@ -21,8 +21,6 @@ html, body {
     font-family: var(--Montserrat-font);
     background-color: var(--white);
     scroll-behavior: smooth;
-    max-width: 100%;
-    overflow-x: hidden; 
 }
 
 
@@ -82,34 +80,30 @@ html, body {
 }
 
 @media (max-width: 768px) {
+  .navbar-collapse .btn-primary {
+    padding: 0.4rem 0.7rem !important;
+  }
+
   .solution-menu.show {
     display: block !important;
     transform: none !important;
-    padding: 1rem 1.25rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 2rem);
-    max-height: 70vh;
+    --columns: repeat(1, 1fr);
+    --translateX: -1dvw;
+    height: 75dvh;
     overflow-y: auto;
-    border-radius: 1rem;
-    background: var(--white);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    box-shadow: none !important;
   }
-
-  .solution-menu .dropdown-item {
-    display: block;
-    width: 100%;
-  }
-
   .solution-menu .description {
     text-wrap: wrap;
-    font-size: 0.85rem;
-    margin-bottom: 0;
   }
-
+  
+.solution-menu .description {
+  font-size: 0.85rem;
+  margin-bottom: 0;
 }
-
-
+}
 
 
 /* tms section */
@@ -499,7 +493,6 @@ html, body {
       padding-left: 0;
       padding-right: 0;
     }
-  
 } 
 } 
 /* your carrier section */
@@ -805,7 +798,7 @@ html, body {
   padding-bottom: 1.2rem !important;
 }
 }
-  
+
 
 /* contact us section */
 .contact-grid {
@@ -1047,6 +1040,29 @@ textarea.hs-input {
   }
 }
 
+
+@media screen and (max-width: 992px) {
+
+  .Footer .footer-row {
+    grid-template-columns: 21rem repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .contact-footer {
+    grid-column: 1 / -1;
+  }
+  .contact-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0.5rem 1rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-links {
+    grid-template-columns: repeat(auto-fit, minmax(12.75rem, 1fr));
+  }    
+}
 @media screen and (max-width: 768px) {
   .Footer {
     .footer-row {
@@ -1071,19 +1087,3 @@ textarea.hs-input {
     padding-left: 5px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
