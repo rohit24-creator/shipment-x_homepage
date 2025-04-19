@@ -176,7 +176,6 @@ html, body {
   padding: 0rem 5rem;
   padding-bottom: 7rem;
   border-radius: 1rem;
-  margin: 0 auto;
   max-width: 85%;
   margin-bottom: 12.5rem;
 
@@ -186,17 +185,12 @@ html, body {
     }
 
     li {
-      display: flex;
-      align-items: center;
       font-size: 1.1rem;
       margin-bottom: 1rem;
     }
   }
 
   .ltl-logos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
 
     img {
       margin-right: 1rem;
@@ -281,7 +275,7 @@ html, body {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   .ltl-section {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     max-width: 100%;
     margin-bottom: 2rem;
   }
@@ -395,7 +389,6 @@ html, body {
 
 .carriers-section-wrapper {
   padding: 0 5rem;
-  margin: 3rem 0;
 
   @media (max-width: 768px) {
     padding: 0.5rem 1rem;
@@ -408,8 +401,7 @@ html, body {
 }
 
 .carriers-section {
-  h2.section-heading {
-    margin-bottom: 3rem; 
+  h2.section-heading { 
 
     @media (max-width: 768px) {
       margin-bottom: 1.5rem;
@@ -455,10 +447,7 @@ html, body {
 /* intelligent rental section */
 .equipment-rental-section {
   background-color: var(--gray-medium);
-  border-radius: 1.5rem; 
-  padding: 1rem 1rem;
   max-width: 75%;
-  margin: 3rem auto;
 }
 
 .equipment-description {
@@ -537,25 +526,6 @@ html, body {
     font-size: 1.25rem;
     font-weight: 300;
 }
-  .app-btn {
-    background-color: black;
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.125rem 0.625rem; 
-    border-radius: 0.8125rem; 
-    font-weight: normal;
-    text-decoration: none;
-
-    i.fa-apple {
-      font-size: 1.875rem; 
-    }
-
-    &:hover {
-      background-color: rgb(30, 30, 30);
-    }
-  }
 
   .mobile-app-vid {
     max-width: 100%;
@@ -595,8 +565,7 @@ html, body {
 .loadboard-section {
   position: relative;
   overflow: hidden;
-  margin-bottom: 3.25rem;
-  padding-top: 3rem;
+
 
   .loadboard-left-bg {
     position: absolute;
@@ -756,8 +725,6 @@ html, body {
 /* co2 section */
 .co2-section {
   background-color: hsl(162.5, 69.7%, 94.6%);
-  margin-bottom: 2rem;
-  padding: 2rem 0;
 
   .container.custom-padding {
     padding-left: 6rem;
@@ -767,9 +734,6 @@ html, body {
   .co2-text {
     max-width: 35.625rem; 
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
     .description {
       font-size: 1.125rem;
       line-height: 1.6;
@@ -780,8 +744,6 @@ html, body {
 
   .co2-image {
     max-width: 35.625rem;
-    margin-left: auto;
-    margin-right: auto;
 
     img {
       max-width: 100%;
@@ -808,19 +770,14 @@ html, body {
 
 /* contact us section */
 .contact-grid {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
   max-width: 68.75rem;
-  margin: 0 auto;
 
 
   @media (max-width: 992px) {
     grid-template-columns: 1fr;
     row-gap: 2rem;
     margin-bottom: 1.875rem;
-    display: flex;
-    flex-direction: column;
 
     .contact-info,
     .contact-form {
@@ -884,15 +841,10 @@ html, body {
   }
 }
 
-.fw-normal {
-  font-weight: 400;
-}
-
 .contact-form {
   max-width:33.6875rem;
   width: 100%;
   height: 42.4125rem;
-  font-family: var(--helvetica-font);
 }
 
 .hs-input {
@@ -921,10 +873,7 @@ textarea.hs-input {
 .native-file-input {
   font-size: 0.875rem;
   color: #33475b;
-  border: none;
-  background: none;
-  box-shadow: none;
-  outline: none;
+  font-family: var(--helvetica-font);
 }
 
 .form-label {
@@ -939,6 +888,7 @@ textarea.hs-input {
   line-height: 1.5rem;
   font-size: 1.75rem;
   color: #33475b;
+  font-family: var(--helvetica-font);
 }
 
 .icon-circle {
@@ -962,9 +912,6 @@ textarea.hs-input {
   border: 1px solid var(--blue-bold);
 }
 
-.btn-contact {
-  font-size: 0.75rem;
-}
 
 
 
@@ -988,15 +935,18 @@ textarea.hs-input {
 }
 
 .footer-link {
+  position: relative;
   padding-inline: 0.5rem;
   padding-block: 0.25rem;
   border-radius: 1.5rem;
+  transition: all 0.3s ease-out;
   text-decoration: none;
   color: hsl(204, 45%, 98%);
+  z-index: 1;
 
   &:hover {
-    color: darkblue;
-    text-decoration: underline;
+    color: hsl(210, 10.8%, 14.5%);
+    text-decoration: none;
     font-weight: 500;
 
     &::before {
@@ -1004,6 +954,20 @@ textarea.hs-input {
     }
   }
 }
+
+.footer-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: hsl(204, 45%, 98%);
+  z-index: -1;
+  transition: all 0.15s ease-out;
+  border-radius: inherit;
+}
+
 
 .contact-footer {
   p {
@@ -1072,5 +1036,4 @@ textarea.hs-input {
       }
     }
   }
-
 }
