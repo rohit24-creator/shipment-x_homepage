@@ -81,7 +81,7 @@ html, body {
   outline: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 536px) {
   .navbar-collapse .btn.btn-primary {
     padding: 0.4rem 0.7rem;
   }
@@ -89,23 +89,36 @@ html, body {
   .navbar .solution-menu.show {
     display: block ;
     transform: none;
-    --columns: repeat(1, 1fr);
-    --translateX: -1dvw;
     height: 75dvh;
     overflow-y: auto;
     scrollbar-width: none;
     box-shadow: none !important;
   }
-  .solution-menu .description {
-    text-wrap: wrap;
-  }
-  
-.solution-menu .description {
-  font-size: 0.85rem;
-  margin-bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  .navbar .solution-menu.show {
+    grid-template-columns: repeat(2, 1fr);
+    transform: none;
+  }
+
+}
+@media screen and (max-width: 992px) {
+  .navbar .solution-menu.show {
+      transform: none;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  .navbar .solution-menu.show  {
+      width: 96dvw;
+  }
+  .solution-menu .description {
+    white-space: normal; 
+    word-wrap: break-word; 
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+}
 
 /* tms section */
 .tms-section {
