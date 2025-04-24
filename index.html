@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your trusted partner for smart logistics, real-time tracking, and supply chain visibility. Get seamless ERP integrations and more.">
     <title>ShipmentX</title>
+    <link rel="preload" as="image" href="/public/images/sh-communication.webp" type="image/webp" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -104,146 +105,140 @@
         </a>
     </div>
 </nav>
-
-    <!-- tms section -->
-<section class="tms-section text-center py-5 mt-5">
+<!-- tms section -->
+<section class="tms-section py-5 text-center mt-5">
     <div class="container">
-        <h1 class="fw-light">Your TMS, Visibility, & Partner network</h1>
-        <span class="d-block h1 text-blue-dark">Together.</span>
-        <a href="#" class="btn btn-primary mt-3">Get Demo</a>
+        <h1 class="section-heading mb-1">Your TMS, Visibility, & Partner network</h1>
+        <p class="section-subheading mb-4">Together.</p>
+        <a href="#" class="btn btn-primary custom-btn">Get Demo</a>
 
-        <div class="row mt-5 bg-light-blue rounded-5">
-            <div class="col-md-4">
-                <article class="card bg-transparent border-0">
-                    <div class="card-body feature-card">
-                        <h2 class="card-title text-center h5 m-0">
-                            Seamless communication
-                        </h2>
-                        <img class="card-img img-fluid mx-auto" fetchpriority="high"   width="394" 
-                        height="276"
-                            src="public/images/sh-communication.webp"
-                            alt="seamless communication between supply chain stakeholders">
-                        <p class="card-text text-center m-0">
-                            Effortlessly streamline your stakeholder communication with TMS, leaving no vital
-                            information overlooked.
-                        </p>
-                    </div>
-                </article>
+        <div class="row features mt-5 rounded-4 p-4">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="feature-card">
+                    <img src="public/images/sh-communication.webp" alt="Seamless communication" class="feature-img">
+                    <h2 class="feature-title">Seamless communication</h2>
+                    <p class="feature-text">
+                        Effortlessly streamline your stakeholder communication with TMS, leaving no vital information
+                        overlooked.
+                    </p>
+                </div>
             </div>
 
-            <div class="col-md-4">
-                <article class="card bg-transparent border-0">
-                    <div class="card-body feature-card">
-                        <h2 class="card-title text-center h5 m-0">
-                            Extended visibility
-                        </h2>
-                        <img class="card-img img-fluid mx-auto" fetchpriority="high"
-                            width="394"
-                            height="276"
-                            src="public/images/sh-visibility.webp" 
-                            alt="Extended visibility in supply chain">
-                        <p class="card-text text-center m-0">
-                            Unveil the Dynamics of Your Entire Supply Chain in Real-Time with our extended
-                            visibility capabilities.
-                        </p>
-                    </div>
-                </article>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="feature-card">
+                    <img src="public/images/sh-visibility.webp" alt="Extended visibility" class="feature-img">
+                    <h2 class="feature-title">Extended visibility</h2>
+                    <p class="feature-text">
+                        Unveil the dynamics of your entire supply chain in real-time with our extended visibility
+                        capabilities.
+                    </p>
+                </div>
             </div>
 
+            <!-- Card 3 -->
             <div class="col-md-4">
-                <article class="card bg-transparent border-0">
-                    <div class="card-body feature-card">
-                        <h2 class="card-title text-center h5 m-0">
-                            Easy integrations
-                        </h2>
-                        <img class="card-img img-fluid mx-auto " fetchpriority="high"   
-                            width="394"
-                            style="height: auto;"
-                            src="public/images/sh-integrations.webp" 
-                            alt="Easy integrations with TMS">
-                        <p class="card-text text-center m-0">
-                            Conveniently manage loads, rate quotes, and tracking in one place with
-                            ERP and warehouse integrations.
-                        </p>
-                    </div>
-                </article>
+                <div class="feature-card">
+                    <img src="public/images/sh-integrations.webp" alt="Easy integrations" class="feature-img">
+                    <h2 class="feature-title">Easy integrations</h2>
+                    <p class="feature-text">
+                        Conveniently manage loads, rate quotes, and tracking in one place with ERP and warehouse
+                        integrations.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+  
 
     <!-- Shippers section-->
-<section class="container carriers-section my-5 ">
-    <h2 class="text-center mb-5">Shippers</h2>
-    <!-- first article -->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h3>Gain end-to-end visibility</h3>
-            <p class="custom-para-width">
-                Connect with all stakeholders on one powerful platform to achieve full visibility,
-                competitive rates, and access to powerful data to strengthen your logistics operations.
-            </p>
+    <section class="carriers-section-wrapper my-5">
+        <div class="carriers-section container">
+            <h2 class="text-center section-heading mb-5">Shippers</h2>
+
+            <!-- First Article -->
+            <article class="row align-items-center carrier-article">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">Gain end-to-end visibility</h3>
+                        <p class="carrier-text">
+                            Connect with all stakeholders on one powerful platform to achieve full visibility,
+                            competitive rates, and access to powerful data to strengthen your logistics operations.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="https://www.shipmentx.com/assets/thumbnails/By-Milestone.jpg" class="glightbox"
+                        data-gallery="gallery1">
+                        <img src="https://www.shipmentx.com/assets/thumbnails/By-Milestone.jpg" alt="image" loading="lazy"
+                            class="img-fluid carrier-img">
+                    </a>
+                </div>
+            </article>
+
+            <!-- Second Article -->
+            <article class="row align-items-center carrier-article flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">Live Tracking and ETA</h3>
+                        <p class="carrier-text">
+                            Remove the element of surprise. Monitor entire flow and know where your carriers
+                            are and view estimated time of arrival to each location based on the real-time information.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="https://www.shipmentx.com/assets/thumbnails/Live-Tracking-and-ETA-Image.jpg"
+                        class="glightbox" data-gallery="gallery1">
+                        <img src="https://www.shipmentx.com/assets/thumbnails/Live-Tracking-and-ETA-Image.jpg" loading="lazy"
+                            alt="image" class="img-fluid carrier-img">
+                    </a>
+                </div>
+            </article>
+
+            <!-- Third Article -->
+            <article class="row align-items-center carrier-article">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">Tendering</h3>
+                        <p class="carrier-text">
+                            With shipment-based tendering we give you the choice to set your target
+                            price and get competitive quotes as the 3PLs and carriers bid for your shipment
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="https://www.shipmentx.com/assets/thumbnails/Tendering-1.jpg" class="glightbox"
+                        data-gallery="gallery1">
+                        <img src="https://www.shipmentx.com/assets/thumbnails/Tendering-1.jpg" alt="image" loading="lazy"
+                            class="img-fluid carrier-img">
+                    </a>
+                </div>
+            </article>
+
+            <!-- Fourth Article -->
+            <article class="row align-items-center carrier-article flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">Shipment Planning-Workbench</h3>
+                        <p class="carrier-text">
+                            The Planning Workbench bridges ERP systems and ShipmentX for seamless planning.
+                            Track shipments, manage routes, and ensure efficiency—all in one intuitive platform.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="https://www.shipmentx.com/assets/thumbnails/planning-workbench.jpg" class="glightbox"
+                        data-gallery="gallery1">
+                        <img src="https://www.shipmentx.com/assets/thumbnails/planning-workbench.jpg" alt="image" loading="lazy"
+                            class="img-fluid carrier-img">
+                    </a>
+                </div>
+            </article>
         </div>
-        <div class="col-lg-6 text-center">
-            <a href="https://www.shipmentx.com/assets/thumbnails/By-Milestone.jpg"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="https://www.shipmentx.com/assets/thumbnails/By-Milestone.jpg" alt="image"
-                    class="img-fluid indeximg">
-            </a>
-        </div>
-    </article>
-    <!-- Second Article-->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center order-2 order-lg-1">
-            <a href="https://www.shipmentx.com/assets/thumbnails/Live-Tracking-and-ETA-Image.jpg"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="https://www.shipmentx.com/assets/thumbnails/Live-Tracking-and-ETA-Image.jpg" alt="image" loading="lazy"
-                    class="img-fluid indeximg">
-            </a>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-            <h3>Live Tracking and ETA</h3>
-            <p class="custom-para-width">
-                Remove the element of surprise. Monitor entire flow and know where your carriers
-                are and view estimated time of arrival to each location based on the real-time information.
-            </p>
-        </div>
-    </article>
-    <!-- third Article -->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h3>Tendering</h3>
-            <p class="custom-para-width">
-                With shipment-based tendering we give you the choice to set your target
-                price and get competitive quotes as the 3PLs and carriers bid for your shipment
-            </p>
-        </div>
-        <div class="col-lg-6 text-center">
-            <a href="https://www.shipmentx.com/assets/thumbnails/Tendering-1.jpg"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="https://www.shipmentx.com/assets/thumbnails/Tendering-1.jpg" alt="image" loading="lazy"
-                    class="img-fluid indeximg">
-            </a>
-        </div>
-    </article>
-    <!-- fourth Article-->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center order-2 order-lg-1">
-            <a href="https://www.shipmentx.com/assets/thumbnails/planning-workbench.jpg"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="https://www.shipmentx.com/assets/thumbnails/planning-workbench.jpg" alt="image" loading="lazy"
-                    class="img-fluid indeximg">
-            </a>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-            <h3>Shipment Planning-Workbench</h3>
-            <p class="custom-para-width">
-                The Planning Workbench bridges ERP systems and ShipmentX for seamless planning.
-                Track shipments, manage routes, and ensure efficiency—all in one intuitive platform.
-            </p>
-        </div>
-    </article>
-</section>
+    </section>
 
 
 
@@ -323,95 +318,112 @@
 </section>
 
     <!-- 3PLs & Transporters -->
-<section class="container carriers-section my-5 ">
-    <h2 class="text-center mb-5">3PLs & Transporters</h2>
-    <!-- first article -->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h3>Easily manage your customer's supply chain</h3>
-            <p class="custom-para-width">
-                Boost your relationship with your customer and improve your team's productivity
-                levels by efficiently managing customer's supply chain using the platform.
-            </p>
+    <section class="carriers-section-wrapper my-5">
+        <div class="carriers-section container">
+            <h2 class="text-center section-heading mb-5">3PLs & Transporters</h2>
+
+            <!-- First Article -->
+            <article class="row align-items-center carrier-article">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">Easily manage your customer's supply chain</h3>
+                        <p class="carrier-text">
+                            Boost your relationship with your customer and improve your team's productivity
+                            levels by efficiently managing customer's supply chain using the platform.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="public/images/livetracking112.webp" class="glightbox" data-gallery="gallery1">
+                        <img src="public/images/livetracking112.webp" alt="image" class="img-fluid carrier-img" loading="lazy">
+                    </a>
+                </div>
+            </article>
+
+            <!-- Second Article -->
+            <article class="row align-items-center carrier-article flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">Comprehensive Dashboard</h3>
+                        <p class="carrier-text">
+                            Receive all customer needs and demands and assign shipments to
+                            the carriers with great ease using our intuitive dashboard.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="https://www.shipmentx.com/assets/thumbnails/Carrier-Dashboard.jpg" class="glightbox"
+                        data-gallery="gallery1">
+                        <img src="https://www.shipmentx.com/assets/thumbnails/Carrier-Dashboard.jpg" alt="image" loading="lazy"
+                            class="img-fluid carrier-img">
+                    </a>
+                </div>
+            </article>
+
+            <!-- Third Article -->
+            <article class="row align-items-center carrier-article">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">Real time tracking and Route Optimization with ETA</h3>
+                        <p class="carrier-text">
+                            Map carrier routes, and plan your trips in a single easy-to-use interface,
+                            using real-time parameters including resource capacity, customer locations, time
+                            preferences,
+                            traffic and weather conditions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="https://www.shipmentx.com/assets/thumbnails/Route-Optimization-With-ETA.jpg"
+                        class="glightbox" data-gallery="gallery1">
+                        <img src="https://www.shipmentx.com/assets/thumbnails/Route-Optimization-With-ETA.jpg" loading="lazy"
+                            alt="image" class="img-fluid carrier-img">
+                    </a>
+                </div>
+            </article>
+
+            <!-- Fourth Article -->
+            <article class="row align-items-center carrier-article flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">ELD Integrations</h3>
+                        <p class="carrier-text">
+                            Highly Feasible feature in your hands with ELD setup to top ELD providers,
+                            Shippers, and Transporters to get real-time visibility in the ShipmentX platform.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="public/images/oracle.webp" class="glightbox" data-gallery="gallery1">
+                        <img src="public/images/oracle.webp" alt="ELD Integrations" class="img-fluid carrier-img" loading="lazy">
+                    </a>
+                </div>
+            </article>
+
+            <!-- Fifth Article -->
+            <article class="row align-items-center carrier-article">
+                <div class="col-lg-6">
+                    <div class="carrier-content">
+                        <h3 class="carrier-title">OTM/SAP TM Integrations</h3>
+                        <p class="carrier-text">
+                            ShipmentX simplifies logistics management by integrating with OTM and SAP TM,
+                            providing real-time updates, streamlined workflows, and enhanced accuracy to optimize supply
+                            chain
+                            performance
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="https://www.shipmentx.com/assets/thumbnails/otm-sap-integrations-2.gif" class="glightbox"
+                        data-gallery="gallery1">
+                        <img src="https://www.shipmentx.com/assets/thumbnails/otm-sap-integrations-2.gif" alt="image" loading="lazy"
+                            class="img-fluid carrier-img">
+                    </a>
+                </div>
+            </article>
         </div>
-        <div class="col-lg-6 text-center">
-            <a href="public/images/livetracking112.webp"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="public/images/livetracking112.webp" alt="image" loading="lazy"
-                    class="img-fluid ">
-            </a>
-        </div>
-    </article>
-    <!-- Second Article-->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center order-2 order-lg-1">
-            <a href="https://www.shipmentx.com/assets/thumbnails/Carrier-Dashboard.jpg"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="https://www.shipmentx.com/assets/thumbnails/Carrier-Dashboard.jpg" alt="image" loading="lazy"
-                    class="img-fluid indeximg">
-            </a>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-            <h3>Comprehensive Dashboard</h3>
-            <p class="custom-para-width">
-                Receive all customer needs and demands and assign shipments to
-                the carriers with great ease using our intuitive dashboard.
-            </p>
-        </div>
-    </article>
-    <!-- third Article -->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h3>Real time tracking and Route Optimization with ETA</h3>
-            <p class="custom-para-width">
-                Map carrier routes, and plan your trips in a single easy-to-use interface,
-                using real-time parameters including resource capacity, customer locations, time preferences,
-                traffic and weather conditions.
-            </p>
-        </div>
-        <div class="col-lg-6 text-center">
-            <a href="https://www.shipmentx.com/assets/thumbnails/Route-Optimization-With-ETA.jpg"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="https://www.shipmentx.com/assets/thumbnails/Route-Optimization-With-ETA.jpg" alt="image" loading="lazy"
-                    class="img-fluid indeximg">
-            </a>
-        </div>
-    </article>
-    <!-- fourth Article-->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center order-2 order-lg-1">
-            <a href="public/images/oracle.webp"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="public/images/oracle.webp" alt="ELD Integrations" class="img-fluid" loading="lazy">
-            </a>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-            <h3>ELD Integrations</h3>
-            <p class="custom-para-width">
-                Highly Feasible feature in your hands with ELD setup to top ELD providers,
-                Shippers, and Transporters to get real-time visibility in the ShipmentX platform.
-            </p>
-        </div>
-    </article>
-    <!-- Fifth Article -->
-    <article class="row align-items-center mb-5">
-        <div class="col-lg-6">
-            <h3>OTM/SAP TM Integrations</h3>
-            <p class="custom-para-width">
-                ShipmentX simplifies logistics management by integrating with OTM and SAP TM,
-                providing real-time updates, streamlined workflows, and enhanced accuracy to optimize supply chain
-                performance
-            </p>
-        </div>
-        <div class="col-lg-6 text-center">
-            <a href="https://www.shipmentx.com/assets/thumbnails/otm-sap-integrations-2.gif"  class="glightbox"
-            data-gallery="gallery1">
-                <img src="https://www.shipmentx.com/assets/thumbnails/otm-sap-integrations-2.gif" alt="image" loading="lazy"
-                    class="img-fluid ">
-            </a>
-        </div>
-    </article>
-</section>
+    </section>
+      
 
 
 <!-- ai section -->
@@ -444,41 +456,43 @@
         <!-- First Article -->
         <article class="row align-items-center carrier-article">
             <div class="col-lg-6">
-                <h3>Manage Load Booking</h3>
-                <p class="custom-para-width">
-                    Get your load orders faster. Connect with all stakeholders on one powerful platform,
-                    check all the available loads and take the ones that are best match to you.
-                </p>
+                <div class="carrier-content">
+                    <h3 class="carrier-title">Manage Load Booking</h3>
+                    <p class="carrier-text">
+                        Get your load orders faster. Connect with all stakeholders on one powerful platform,
+                        check all the available loads and take the ones that are best match to you.
+                    </p>
+                </div>
             </div>
             <div class="col-lg-6 text-center">
-                <a href="public/images/livetrack in tms.webp" class="glightbox"
-                    data-gallery="gallery1">
-                    <img src="public/images/livetrack in tms.webp" loading="lazy"
-                        alt="Manage Load Booking" class="img-fluid indeximg" />
+                <a href="public/images/livetrack in tms.webp" class="glightbox" data-gallery="gallery1">
+                    <img src="public/images/livetrack in tms.webp" loading="lazy" alt="Manage Load Booking" loading="lazy"
+                        class="img-fluid carrier-img" />
                 </a>
             </div>
         </article>
 
         <!-- Second Article -->
-        <article class="row align-items-center carrier-article">
-            <div class="col-lg-6 text-center order-2 order-lg-1">
+        <article class="row align-items-center carrier-article flex-lg-row-reverse">
+            <div class="col-lg-6">
+                <div class="carrier-content">
+                    <h3 class="carrier-title">ELD Integrations</h3>
+                    <p class="carrier-text">
+                        Highly Feasible feature in your hands with ELD setup to top ELD providers,
+                        Shippers, and Transporters to get real-time visibility in the ShipmentX platform.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
                 <a href="https://www.shipmentx.com/assets/images/anygps-flow-640x360.gif" class="glightbox"
                     data-gallery="gallery1">
                     <img src="https://www.shipmentx.com/assets/images/anygps-flow-640x360.gif" alt="ELD Integrations" loading="lazy"
-                        class="img-fluid" />
+                        loading="lazy" class="img-fluid carrier-img" />
                 </a>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2">
-                <h3>ELD Integrations</h3>
-                <p class="custom-para-width">
-                    Highly Feasible feature in your hands with ELD setup to top ELD providers,
-                    Shippers, and Transporters to get real-time visibility in the ShipmentX platform.
-                </p>
             </div>
         </article>
     </div>
 </section>
-  
 
 
     <!-- intellignet equipment section -->

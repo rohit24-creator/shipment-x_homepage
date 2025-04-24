@@ -15,7 +15,78 @@
   --Montserrat-font: "Montserrat", sans-serif;
   --helvetica-font:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+:root {
+  --brand-50: #f0f9ff;
+  --brand-100: #e0f3ff;
+  --brand-200: #b8e7ff;
+  --brand-300: #75d6ff;
+  --brand-400: #2ec4ff;
+  --brand-500: #02aaf2;
+  --brand-600: #0088d2;
+  --brand-700: #006ba8;
+  --brand-900: #074c74;
+  --brand-950: #04304d;
 
+  --brand-primary: #006397;
+
+  /* accent */
+  --accent-50: #fbf5ff;
+  --accent-100: #f5e9fe;
+  --accent-200: #eed6fe;
+  --accent-300: #e0b7fb;
+  --accent-400: #cd88f8;
+  --accent-500: #b95af2;
+  --accent-700: #8d27c4;
+  --accent-800: #7926a3;
+  --accent-900: #632083;
+  --accent-950: #450a61;
+
+  --accent: #a739e4;
+
+  /* success */
+  --success-50: #ecfdf5;
+  --success-100: #d2f9e5;
+  --success-200: #a9f1d0;
+  --success-300: #71e4b6;
+  --success-400: #41d19c;
+  --success-500: #14b57f;
+  --success-700: #077556;
+  --success-800: #085d45;
+  --success-900: #084c3a;
+  --success-950: #032b21;
+
+  --success: #089166;
+
+  /* warning */
+  --warning-50: #fff8ec;
+  --warning-100: #fff0d3;
+  --warning-200: #ffdea7;
+  --warning-300: #ffc56f;
+  --warning-400: #ffa035;
+  --warning-500: #ff830e;
+  --warning-700: #c94d05;
+  --warning-800: #9f3d0d;
+  --warning-900: #80340e;
+  --warning-950: #451805;
+
+  /* 600 orange */
+  --warning: #fb6b04;
+
+  /* neutrals */
+  --neutral-50: hsl(204, 45%, 98%);
+  --neutral-100: hsl(210, 40%, 96%);
+  --neutral-200: hsl(214, 32%, 91%);
+  --neutral-300: hsl(213, 27%, 84%);
+  --neutral-400: hsl(215, 20%, 65%);
+  --neutral-500: hsl(215, 16%, 47%);
+  --neutral-600: hsl(215, 19%, 35%);
+  --neutral-700: hsl(215, 25%, 27%);
+  --neutral-800: hsl(217, 33%, 17%);
+  --neutral-900: hsl(222, 47%, 11%);
+  --neutral-950: #020617;
+
+  --sections-margin-bottom: 72px;
+}
 
 html, body {
     font-family: var(--Montserrat-font);
@@ -122,63 +193,97 @@ html, body {
 
 /* tms section */
 .tms-section {
-  .bg-light-blue {
-    background-color: var(--gray-medium);
+  background-color: var(--neutral-50);
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--neutral-800);
+}
+
+.section-subheading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+.custom-btn {
+  background-color: var(--brand-600);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: var(--brand-700);
+}
+
+.features {
+  background-color: var(--brand-50);
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.feature-img {
+  width: 100%;
+  max-width: 18rem;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--neutral-800);
+  margin-bottom: 0.75rem;
+}
+
+.feature-text {
+  color: var(--neutral-600);
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.75rem;
+  }
+
+  .section-subheading {
+    font-size: 2rem;
+  }
+
+  .feature-img {
+    max-width: 14rem;
   }
 
   .feature-card {
-    img {
-      display: block;
-      max-width: 22.3125rem; 
-      width: 100%;
-      height: auto;
-      margin: 0.9375rem auto;
-    }
-  }
-}
-
-.btn-primary {
-  border: none;
-  padding: 0.625rem 1.25rem; 
-  border-radius: 0.5rem; 
-  color: #fff;
-  background-color: var(--blue-dark);
-  border-color: var(--blue-dark);
-}
-
-@media (max-width: 768px) {
-  .tms-section {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
+    padding: 1.5rem 1rem;
   }
 
-  .tms-section .text-primary,
-  .tms-section .card-title {
-    font-size: 1.25rem; 
+  .feature-title {
+    font-size: 1.1rem;
   }
 
-  .tms-section .card-text {
-    font-size: 1rem; 
-    padding: 0 0.5rem;
-  }
-
-  .tms-section .btn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-
-
-  .tms-section .feature-card .card-img {
-    width: 10.5rem;
-    height: 7.3125rem;
-    margin: 1rem auto;
-    display: block;
-  }
-  
-
-  .tms-section .feature-card {
-    margin-bottom: 2rem;
+  .feature-text {
+    font-size: 0.95rem;
   }
 }
 
@@ -392,61 +497,89 @@ html, body {
   }
 }
 
-/* carriers section */
-
 .carriers-section-wrapper {
-  padding: 0 5rem;
-
-  @media (max-width: 768px) {
-    padding: 0.5rem 1rem;
-    margin: 1.5rem 0;
-  }
-}
-.indeximg {
-  border-radius: 0.75rem; 
-  box-shadow: 0 0.375rem 1.125rem hsla(0, 0%, 0%, 0.3); 
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: var(--neutral-50);
 }
 
-.carriers-section {
-  h2.section-heading { 
+.section-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--neutral-900);
+  letter-spacing: -0.5px;
+}
 
-    @media (max-width: 768px) {
-      margin-bottom: 1.5rem;
-      font-size: 1.6875rem;
-    }
+.carrier-article {
+  margin-bottom: 4rem;
+  transition: all 0.3s ease;
+}
+
+.carrier-content {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.carrier-title {
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+  margin-bottom: 1rem;
+}
+
+.carrier-text {
+  font-size: 1.05rem;
+  color: var(--neutral-600);
+  line-height: 1.7;
+  max-width: 38rem;
+}
+
+.carrier-img {
+  max-width: 100%;
+  border-radius: 1.25rem;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carrier-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .carriers-section-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  h3 {
-    @media (max-width: 768px) {
-      font-size: 1.4375rem;
-    }
+  .section-heading {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
   }
 
-  .section-para {
-    @media (max-width: 768px) {
-      font-size: 1rem;
-    }
+  .carrier-title {
+    font-size: 1.375rem;
   }
 
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
+  .carrier-text {
+    font-size: 1rem;
+  }
 
-    @media (max-width: 768px) {
-      object-fit: cover;
-      display: block;
-      margin: 1rem auto;
-    }
+  .carrier-content {
+    text-align: center;
   }
 
   .carrier-article {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
+  }
 
-    @media (max-width: 768px) {
-      margin-bottom: 1.5rem;
-    }
+  .carrier-img {
+    margin-top: 1.25rem;
   }
 }
+
 
 
 /* intelligent rental section */
