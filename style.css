@@ -289,119 +289,120 @@ html, body {
 
 
 /* LTL Section */
-.ltl-section {
-  background-color: #f1f5f9;
-  padding: 0rem 5rem;
-  padding-bottom: 7rem;
-  border-radius: 1rem;
-  max-width: 85%;
-  margin-bottom: 12.5rem;
-
-  .ltl-benefits {
-    img {
-      margin-right: 0.5rem;
-    }
-
-    li {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-    }
-  }
-
-  .ltl-logos {
-
-    img {
-      margin-right: 1rem;
-      max-width: 5rem;
-      height: clamp(2rem, calc(1rem + 1.75vw), 3rem);
-      filter: grayscale(100%);
-    }
-  }
-
-  .ltl-tab {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--white);
-    border: 1px solid var(--blue-primary);
-    border-radius: 1.2rem;
-    padding: 1.2rem;
-    margin-top: 1rem;
-    width: 75%;
-    box-shadow: 0.25rem 0.3125rem 0 var(--blue-primary);
-
-    h5 {
-      margin-bottom: 1.5rem;
-    }
-
-    .form-control {
-      border-color: var(--gray-border);
-      background-color: var(--white-lighter);
-      border-radius: 0.25rem;
-      width: 100%;
-
-      &:focus {
-        border-color: var(--blue-primary);
-        box-shadow: none;
-        outline: none;
-      }
-    }
-
-      .btn-primary {
-        color: #fff;
-        background-color: var(--blue-dark);
-        border-color: var(--blue-dark);
-        border-radius: 2rem;
-        padding: 0.5rem 1.5rem;
-        width: 100%;
-      }
-
-    .col-auto {
-      flex: 1 1 100%;
-    }
-
-
-    @media (min-width: 768px) {
-      .col-auto {
-        flex: 1 1 calc(33.333% - 1rem);
-      }
-    }
-
-    @media (min-width: 992px) {
-
-      .col-auto {
-        flex: 1 1 calc(25% - 1rem);
-      }
-
-      .btn-wrapper {
-        flex: 0 0 auto;
-        align-self: center;
-
-        .btn-primary {
-          width: auto;
-        }
-      }
-    }
-  }
+.ltl-modern-section {
+  background: linear-gradient(to right, #f8fafc, #eef2f7);
+  padding: 5rem 0;
 }
 
-/* Mobile Adjustments */
+.ltl-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+.ltl-subheading {
+  font-size: 1.15rem;
+  color: #475569;
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
+.ltl-features li {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #334155;
+}
+
+.ltl-features i {
+  color: var(--blue-primary);
+  font-size: 1.2rem;
+}
+
+.ltl-logo-strip img {
+  height: 2.75rem;
+  max-width: 4.25rem;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 0.35rem;
+}
+
+.ltl-logo-strip img:hover {
+  filter: none;
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.ltl-form-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+
+.ltl-form-wrapper h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.ltl-form-wrapper .form-label {
+  font-weight: 600;
+  color: #334155;
+}
+
+.ltl-form-wrapper .form-control {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+  border-radius: 0.5rem;
+}
+
+.ltl-form-wrapper .form-control:focus {
+  border-color: var(--blue-primary);
+  background-color: #ffffff;
+}
+
+.ltl-form-wrapper .btn-primary {
+  background-color: var(--blue-dark);
+  border-color: var(--blue-dark);
+  padding: 0.6rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.ltl-form-wrapper .btn-primary:hover {
+  background-color: var(--blue-primary);
+  border-color: var(--blue-primary);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .ltl-section {
-    padding: 0.5rem 0.5rem;
-    max-width: 100%;
-    margin-bottom: 2rem;
+  .ltl-modern-section {
+    padding: 2rem 1rem;
   }
 
-  .ltl-section .ltl-logos {
-    gap: 1.5rem;
-    margin-left: 2.25rem;
-    margin-bottom: 1.25rem;
+  .ltl-heading {
+    font-size: 1.875rem;
   }
 
-  .ltl-section .ltl-tab {
-    position: relative;
-    width: auto;
+  .ltl-subheading {
+    font-size: 1rem;
+  }
+
+  .ltl-form-wrapper {
+    margin-top: 2rem;
+  }
+
+  .ltl-logo-strip {
+    justify-content: center;
+  }
+
+  .ltl-form-wrapper h4 {
+    text-align: center;
   }
 }
 
