@@ -409,95 +409,79 @@ html, body {
 
 
 /* ai section */
-.email-parser-section {
-  position: relative;
-  margin-inline: 2rem;
-  border-radius: 2rem;
-  background-color: rgb(47, 55, 73);
-  background-image: url(public/images/circuit-board-and-ai-micro-processor-artificial-i-2025-03-09-19-08-58-utc.webp);
-  background-repeat: no-repeat;
+.ai-section {
+  background: radial-gradient(ellipse at top left, #0f172a, #111827 80%);
   background-size: cover;
-  background-position: top left;
+  padding: 2rem 2rem;
+  position: relative;
   overflow: hidden;
+  border-radius: 2rem;
+  margin: 3rem 2rem;
 }
 
-.email-parser-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.ai-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+  color: #e5e7eb;
+}
+
+.ai-title {
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #60a5fa, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.ai-lead {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.ai-desc {
+  font-size: 1.0625rem;
+  color: #d1d5db;
+}
+
+/* Video Glass Style */
+.video-glass {
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.email-parser-video {
   width: 100%;
-  height: 100%;
-  background: hsl(220, 42.9%, 16%);
-  opacity: 0.8;
-  z-index: 1;
-}
-
-.ai-outer-container {
-  padding: 3.5rem; 
-  position: relative;
-}
-
-.ai-container {
-  position: relative;
-  z-index: 2;
-  max-width: 75rem; 
-  margin: 0 auto;
-}
-
-.email-parser-vid {
-  width: 100%;
-  max-width:43.125rem;
   height: auto;
   border-radius: 0.75rem;
-  box-shadow: 0 0.25rem 0.625rem var(--shadow-color); 
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: block;
 }
 
-.ai-section-para {
-  max-width: 48rem;
-  width: 100%;
-  font-size: 1.125rem;
-}
-
-@media (min-width: 992px) {
-  .ai-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap; 
-    gap: 2rem; 
-  }
-
-
-  .col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-}
-
+/* Responsive */
 @media (max-width: 991px) {
-  .email-parser-section {
-    margin-inline: 0.5rem; 
+  .ai-card, .ai-video {
+    margin: 0 auto;
   }
 
-  .ai-outer-container {
-    padding: 2.5rem 2.3rem; 
+  .ai-card {
+    margin-bottom: 2rem;
   }
 
-  .ai-section-para {
-    margin-top: 1.5rem;
-    text-align: left;
-  }
-
-  .ai-container {
-    padding: 0;
+  .ai-section {
+    margin: 2rem 0.75rem;
+    padding: 3rem 1rem;
   }
 }
 
+
+/* carrier section */
 .carriers-section-wrapper {
   padding-left: 5rem;
   padding-right: 5rem;
