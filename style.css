@@ -643,32 +643,11 @@ html, body {
 
 /* your carrier section */
 .carrier-section {
-  background-color: #FAF9F9;
+  background: linear-gradient(135deg, rgb(241, 245, 249), rgb(226, 232, 240));
   padding: 3.75rem 13%; 
-  margin-bottom: 3.125rem; 
 
-  .feature-badge {
-    margin: 0;
-    width: fit-content;
-    padding: 0.25rem 0.75rem;
-    background-color: hsl(201, 60%, 93%);
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; 
-
-    .primary-color {
-      color: hsl(202, 90%, 40%);
-    }
-
-    img {
-      height: 1.5rem;
-      width: auto;
-    }
-  }
-  .lead {
-    font-size: 1.25rem;
-    font-weight: 300;
+.display-6{
+  color: var(--brand-primary);
 }
 
   .mobile-app-vid {
@@ -704,6 +683,7 @@ html, body {
     padding-right: 0;
   }
 }
+
 /* Loadboard Section */
 .loadboard-section {
   position: relative;
