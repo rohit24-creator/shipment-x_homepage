@@ -613,69 +613,58 @@
       
 
 <!-- loadboard section -->
-<section class="loadboard-section mb-5 pt-5 ">
-    <div class="loadboard-left-bg"></div>
-    <div class="loadboard-content">
-        <div class="container loadboard-container pb-5">
-            <div class="text-center mb-5">
-                <h2 class="loadboard-title" style="font-weight: 300;">
-                    Loadboard integrations to drive your business forward
-                </h2>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-lg-6 d-flex justify-content-center">
-                    <img src="public/images/loadboard_integrations.svg" alt="Loadboard Integrations" class="img-fluid" loading="lazy"
-                        style="max-width: 75%;" />
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="loadboard-text-wrapper">
-                        <h3 class="h4 para-title">Effortless Booking</h3>
-                        <p class="loadboard-para">
-                            Book live loads or trucks across leading freight marketplaces
-                            seamlessly within ShipmentX—no need to shuffle between tabs or
-                            tools.
+<section class="loadboard-section pt-5 pb-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <!-- Text Content -->
+            <div class="col-lg-6">
+                <div class="loadboard-text-block">
+                    <h2 class="section-heading mb-4">
+                        Loadboard Integrations to Drive Your Business Forward
+                    </h2>
+                    <div class="feature-block mb-4">
+                        <h3 class="feature-title mb-2">Effortless Booking</h3>
+                        <p class="feature-description">
+                            Book live loads or trucks across leading freight marketplaces seamlessly within ShipmentX—no
+                            need to shuffle between tabs or tools.
                         </p>
-
-                        <h3 class="para-title">Quick Posting</h3>
-                        <p class="loadboard-para">
-                            List your load or empty trucks in ShipmentX with just a click,
-                            connecting you with the right prospects at the perfect time, all
-                            on one screen.
+                    </div>
+                    <div class="feature-block">
+                        <h3 class="feature-title mb-2">Quick Posting</h3>
+                        <p class="feature-description">
+                            List your load or empty trucks in ShipmentX with just a click, connecting you with the right
+                            prospects at the perfect time, all on one screen.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Loadboard tab -->
-            <div class="loadboard-tab">
-                <h3 class="h5 mb-3">Search Loads</h3>
-                <form>
-                    <div class="row g-4">
-                        <div class="col-auto">
+            <!-- Form Block -->
+            <div class="col-lg-6">
+                <div class="loadboard-form-card p-4 shadow rounded-4">
+                    <h3 class="form-title text-center mb-4">Search LTL quotes</h3>
+                    <form>
+                        <div class="mb-3">
                             <label for="origin" class="form-label">Origin</label>
-                            <input type="text" class="form-control origin-input" id="origin" />
+                            <input type="text" class="form-control" id="origin" placeholder="Enter city or postal code">
                         </div>
-                        <div class="col-auto">
+                        <div class="mb-3">
                             <label for="destination" class="form-label">Destination</label>
-                            <input type="text" class="form-control destination-input" id="destination" />
+                            <input type="text" class="form-control" id="destination"
+                                placeholder="Enter city or postal code">
                         </div>
-                        <div class="col-auto">
-                            <label for="weight" class="form-label">Range (miles)</label>
-                            <input type="text" class="form-control range-input" id="weight" />
+                        <div class="mb-4">
+                            <label for="range" class="form-label">Range (miles)</label>
+                            <input type="number" class="form-control" id="range" placeholder="Enter in pounds (lbs)">
                         </div>
-                        <div class="col-auto btn-wrapper d-flex align-items-end">
-                            <button type="submit" class="btn btn-primary rounded-5 find-quotes-btn">
-                                Fetch Loads
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                        <button type="submit" class="btn btn-primary w-100 btn-search-loads rounded-pill">Fetch Loads</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
 
 
 
