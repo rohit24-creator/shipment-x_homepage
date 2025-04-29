@@ -95,12 +95,6 @@ html, body {
 }
 
 
-
-.custom-para-width{
-    max-width: 31rem;
-    font-size: 1.125rem;
-}
-
 .btn-primary:hover {
   background: #004d73;
 }
@@ -257,7 +251,6 @@ html, body {
   font-weight: 700;
   color: var(--neutral-800);
   letter-spacing: -0.5px;
-  margin-bottom: 0.5rem;
   animation: fadeUp 1s ease-out forwards;
 }
 
@@ -265,7 +258,6 @@ html, body {
   font-size: 2rem;
   font-weight: 500;
   color: var(--brand-primary);
-  margin-bottom: 1.5rem;
   animation: fadeUp 1.2s ease-out forwards;
 }
 
@@ -276,7 +268,6 @@ html, body {
   font-weight: 600;
   font-size: 1.1rem;
   border: none;
-  border-radius: 0.75rem;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -292,7 +283,6 @@ html, body {
 
 .feature-card {
   background-color: #fff;
-  border-radius: 1rem;
   padding: 2rem 1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -308,14 +298,12 @@ html, body {
   width: 100%;
   max-width: 18rem;
   height: auto;
-  margin-bottom: 1.5rem;
 }
 
 .feature-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--neutral-800);
-  margin-bottom: 0.75rem;
 }
 
 .feature-text {
@@ -384,16 +372,15 @@ html, body {
 
 .ltl-features li {
   font-size: 1.05rem;
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.6rem;
   color: #334155;
 }
 
-.ltl-features i {
+.ltl-features .material-symbols-outlined {
   color: var(--blue-primary);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .ltl-logo-strip img {
@@ -497,8 +484,6 @@ html, body {
 .ai-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border-radius: 1.25rem;
   padding: 2rem;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
@@ -511,7 +496,6 @@ html, body {
   background: linear-gradient(90deg, #60a5fa, #818cf8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
 }
 
 .ai-lead {
@@ -523,13 +507,6 @@ html, body {
 .ai-desc {
   font-size: 1.0625rem;
   color: #d1d5db;
-}
-
-/* Video Glass Style */
-.video-glass {
-  border-radius: 1rem;
-  overflow: hidden;
-  max-width: 100%;
 }
 
 .email-parser-video {
@@ -643,9 +620,10 @@ html, body {
 
 
 /* intelligent rental section */
-.equipment-modern-section {
+.equipment-rental-section {
   background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
-  border-radius: 2rem;
+  border-radius: 6rem;
+  max-width: 98%;
 }
 
 .section-subtitle {
@@ -667,7 +645,6 @@ html, body {
 }
 
 .equipment-image {
-  border-radius: 1rem;
   max-width: 100%;
   height: auto;
 }
@@ -703,7 +680,7 @@ html, body {
 }
 
 @media (max-width: 991px) {
-  .equipment-modern-section {
+  .equipment-rental-section {
     padding: 2rem 1rem;
   }
 
@@ -729,7 +706,6 @@ html, body {
     max-width: 100%;
     height: auto;
     max-height: 32rem;
-    border-radius: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -835,13 +811,11 @@ html, body {
   font-size: 2.5rem;
   color: var(--brand-500);
   font-weight: 700;
-  margin-bottom: 1.5rem;
 }
 
 .co2-card p {
   font-size: 1.125rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
 }
 
 .co2-card .btn-primary {

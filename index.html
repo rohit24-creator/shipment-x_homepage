@@ -13,9 +13,6 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-25..200" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
@@ -110,16 +107,16 @@
 <!-- tms section -->
 <section class="tms-section py-5 text-center mt-5">
     <div class="container">
-        <h1 class="section-heading mb-1">Your TMS, Visibility, & Partner network</h1>
+        <h1 class="section-heading mb-2">Your TMS, Visibility, & Partner network</h1>
         <p class="section-subheading mb-4">Together.</p>
-        <a href="#" class="btn btn-primary custom-btn">Get Demo</a>
+        <a href="#" class="btn btn-primary custom-btn rounded-3">Get Demo</a>
 
         <div class="row features mt-5 rounded-4 p-4">
             <!-- Card 1 -->
             <div class="col-md-4 mb-4 mb-md-0">
                 <div class="feature-card">
-                    <img src="public/images/sh-communication.webp" alt="Seamless communication" class="feature-img">
-                    <h2 class="feature-title">Seamless communication</h2>
+                    <img src="public/images/sh-communication.webp" alt="Seamless communication" class="feature-img mb-4">
+                    <h2 class="feature-title mb-3">Seamless communication</h2>
                     <p class="feature-text">
                         Effortlessly streamline your stakeholder communication with TMS, leaving no vital information
                         overlooked.
@@ -130,7 +127,7 @@
             <!-- Card 2 -->
             <div class="col-md-4 mb-4 mb-md-0">
                 <div class="feature-card">
-                    <img src="public/images/sh-visibility.webp" alt="Extended visibility" class="feature-img">
+                    <img src="public/images/sh-visibility.webp" alt="Extended visibility" class="feature-img mb-4">
                     <h2 class="feature-title">Extended visibility</h2>
                     <p class="feature-text">
                         Unveil the dynamics of your entire supply chain in real-time with our extended visibility
@@ -142,7 +139,7 @@
             <!-- Card 3 -->
             <div class="col-md-4">
                 <div class="feature-card">
-                    <img src="public/images/sh-integrations.webp" alt="Easy integrations" class="feature-img">
+                    <img src="public/images/sh-integrations.webp" alt="Easy integrations" class="feature-img mb-4">
                     <h2 class="feature-title">Easy integrations</h2>
                     <p class="feature-text">
                         Conveniently manage loads, rate quotes, and tracking in one place with ERP and warehouse
@@ -253,9 +250,9 @@
                     <h2 class="ltl-heading">LTL Integrations</h2>
                     <p class="ltl-subheading">Pay Only for the weight and space your freight uses</p>
                     <ul class="ltl-features list-unstyled mt-4">
-                        <li><i class="bi bi-truck"></i>Reliable Carrier</li>
-                        <li><i class="bi bi-box-seam"></i>Wider Service Options</li>
-                        <li><i class="bi bi-globe2"></i>Larger Carrier Network</li>
+                        <li class="mb-3"><span class="material-symbols-outlined">local_shipping</span> Reliable Carrier</li>
+                        <li class="mb-3"><span class="material-symbols-outlined">inventory_2</span> Wider Service Options</li>
+                        <li class="mb-3"><span class="material-symbols-outlined">language</span> Larger Carrier Network</li>
                     </ul>
 
                     <div class="ltl-logo-strip d-flex flex-wrap align-items-center gap-3 mt-4">
@@ -413,7 +410,7 @@
             <!-- Text Content -->
             <div class="col-lg-6">
                 <div class="ai-card">
-                    <h2 class="ai-title">
+                    <h2 class="ai-title mb-3">
                         AI-Driven Efficiency in Logistics</h2>
                     <p class="ai-lead">
                         Integrated with ShipmentX TMS, it turns emails into structured data, saving time and boosting
@@ -486,7 +483,7 @@
 </section>
 
 <!-- Equipment Rental Section -->
-<section class="equipment-modern-section py-5">
+<section class="equipment-rental-section py-5 mx-auto">
     <div class="container">
         <div class="row align-items-center gy-4">
             <!-- Text Content -->
@@ -506,7 +503,7 @@
                 <a href="https://www.shipmentx.com/assets/thumbnails/equipment-rental-dashboard.jpg" class="glightbox"
                     data-gallery="gallery1">
                     <img src="https://www.shipmentx.com/assets/thumbnails/equipment-rental-dashboard.jpg"
-                        alt="equipment dashboard" class="img-fluid equipment-image shadow-lg">
+                        alt="equipment dashboard" class="img-fluid equipment-image rounded-4 shadow-lg">
                 </a>
             </div>
         </div>
@@ -602,7 +599,7 @@
 
                 <!-- Image or Illustration Column -->
                 <div class="col-lg-6 text-center">
-                    <video id="appVid" class="mobile-app-vid vid-fluid-y" controls autoplay loop preload="metadata"
+                    <video id="appVid" class="mobile-app-vid rounded-4 vid-fluid-y" controls autoplay loop preload="metadata"
                         style=" box-shadow: rgba(0, 0, 0, 0.1) 0px 0.25rem 0.625rem;">
                         <source src="public/videos/Web-Mobile-Vid_1.mp4" type="video/mp4">
                     </video>
@@ -675,7 +672,7 @@
             <!-- Left Column -->
             <div class="col-lg-6 py-3">
                 <div class="co2-card p-4 p-lg-5 bg-neutral-100 shadow-lg rounded-4">
-                    <h2 class="text-primary fw-bold mb-3">CO₂ Emission Calculator</h2>
+                    <h2 class="text-primary fw-bold mb-4">CO₂ Emission Calculator</h2>
                     <p class="text-neutral-700 fs-4 mb-3">Sustainability isn't a feature. It's a foundation.</p>
                     <p class="text-neutral-600 mb-4">
                         ShipmentX empowers you with real-time visibility into your freight emissions. Understand your carbon footprint,
@@ -891,4 +888,3 @@
 </script>
 </body>
 </html>
-
