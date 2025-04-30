@@ -464,29 +464,22 @@ html, body {
   padding: 2rem 2rem;
   position: relative;
   overflow: hidden;
-  border-radius: 2rem;
-  margin: 3rem 2rem;
 }
 
 .ai-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1.25rem;
-  padding: 2rem;
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
   color: #e5e7eb;
 }
 
 .ai-title {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 900;
   background: linear-gradient(90deg, #60a5fa, #818cf8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .ai-lead {
-  font-size: 1.25rem;
+  font-size: 2.15rem;
   margin-bottom: 0.75rem;
   font-weight: 500;
 }
@@ -514,11 +507,30 @@ html, body {
   }
 
   .ai-section {
-    margin: 2rem 0.75rem;
     padding: 3rem 1rem;
   }
 }
 
+.ai-section .row {
+  position: relative;
+}
+
+.ai-section .row::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 80%; 
+  background-color: var(--neutral-700);
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {
+  .ai-section .row::before {
+    display: none;
+  }
+}
 
 /* Carriers Section */
 .carriers-section {
