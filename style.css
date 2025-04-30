@@ -633,25 +633,15 @@ html, body {
 /* intelligent rental section */
 .equipment-rental-section {
   background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
-  border-radius: 6rem;
-  max-width: 98%;
 }
 
 .section-subtitle {
-  font-weight: 600;
   letter-spacing: 0.05em;
   color: var(--brand-primary)
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1e293b;
-}
-
 .section-description {
   font-size: 1.125rem;
-  color: #475569;
   line-height: 1.6;
 }
 
@@ -661,9 +651,6 @@ html, body {
 }
 
 .feature-card {
-  background: #fff;
-  border-radius: 1rem;
-  padding: 2rem 1.5rem;
   box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -675,18 +662,14 @@ html, body {
 
 .feature-icon {
   font-size: 2.5rem;
-  color: #0d6efd;
 }
 
 .feature-title {
   font-size: 1.125rem;
-  font-weight: 600;
-  color: #1e293b;
 }
 
 .feature-text {
   font-size: 0.95rem;
-  color: #64748b;
   margin-top: 0.5rem;
 }
 
@@ -701,6 +684,38 @@ html, body {
 
   .feature-card {
     padding: 1.5rem;
+  }
+}
+
+.equipment-card-wrapper {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.equipment-text-wrap {
+  flex: 1;
+}
+
+.equipment-image-wrap {
+  flex: 1;
+  max-width: 50%;
+}
+
+@media (max-width: 991px) {
+  .equipment-card-wrapper {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .equipment-image-wrap {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .equipment-image {
+    border-radius: 1rem;
+    max-height: 300px;
   }
 }
 
@@ -882,8 +897,6 @@ html, body {
 }
 .co2-card-wrapper {
   background-color: var(--neutral-100);
-  display: flex;
-  flex-direction: column;
 }
 
 @media (min-width: 992px) {
