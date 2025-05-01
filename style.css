@@ -339,34 +339,51 @@ html, body {
 
 
 /* LTL Section */
-.ltl-modern-section {
-  background: linear-gradient(to right, var(--neutral-50), var(--neutral-100));
-  padding: 5rem 0;
+
+.ltl-wrapper {
+  background-color: var(--brand-50);
 }
 
-.ltl-heading {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--brand-primary);
+.ltl-container {
+  background: linear-gradient(135deg, #04304d, #0284c7),
+              url('/public/images/pexels-markie-mad-336302786-14048025') center/cover no-repeat;
+  border-radius: 2rem;
 }
 
-.ltl-subheading {
-  font-size: 1.15rem;
-  color: #475569;
-  margin-top: 0.75rem;
-  line-height: 1.6;
+.ltl-left {
+  background-size: cover;
+  background-position: center;
 }
+
+.ltl-form-card {
+  border-radius: 2.5rem;
+  border-top-left-radius: 4rem;
+}
+
+.ltl-btn {
+  background-color: var(--brand-600);
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+.ltl-btn:hover {
+  background-color: var(--brand-700);
+}
+
 
 .ltl-features li {
   font-size: 1.05rem;
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: #334155;
+  color: #e2e8f0;
 }
 
 .ltl-features .material-symbols-outlined {
-  color: var(--blue-primary);
+  color: var(--brand-50);
   font-size: 1.5rem;
 }
 
@@ -374,7 +391,7 @@ html, body {
   height: 2.75rem;
   max-width: 4.25rem;
   object-fit: contain;
-  filter: grayscale(100%);
+  filter: grayscale(0%) brightness(1.2) contrast(10);
   opacity: 0.75;
   transition: transform 0.3s ease, filter 0.3s ease;
   border-radius: 0.35rem;
@@ -386,74 +403,15 @@ html, body {
   opacity: 1;
 }
 
-.ltl-form-wrapper {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-}
-
-
-.ltl-form-wrapper h4 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1e293b;
-}
-
-.ltl-form-wrapper .form-label {
-  font-weight: 600;
-  color: #334155;
-}
-
-.ltl-form-wrapper .form-control {
-  background-color: #f1f5f9;
-  border-color: #cbd5e1;
-  border-radius: 0.5rem;
-}
-
-.ltl-form-wrapper .form-control:focus {
-  border-color: var(--blue-primary);
-  background-color: #ffffff;
-}
-
-.ltl-form-wrapper .btn-primary {
-  background-color: var(--blue-dark);
-  border-color: var(--blue-dark);
-  padding: 0.6rem 1.5rem;
-  border-radius: 2rem;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.ltl-form-wrapper .btn-primary:hover {
-  background-color: var(--blue-primary);
-  border-color: var(--blue-primary);
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-  .ltl-modern-section {
-    padding: 2rem 1rem;
-  }
 
-  .ltl-heading {
-    font-size: 1.875rem;
-  }
-
-  .ltl-subheading {
-    font-size: 1rem;
-  }
-
-  .ltl-form-wrapper {
+  .ltl-form-card {
     margin-top: 2rem;
-  }
-
-  .ltl-logo-strip {
-    justify-content: center;
-  }
-
-  .ltl-form-wrapper h4 {
-    text-align: center;
+    margin-inline: auto;
+    border-radius: 2rem;
   }
 }
+
 
 
 
@@ -766,65 +724,46 @@ html, body {
 
 
 /* Loadboard Section */
-.loadboard-section {
-  background: var(--brand-50);
+.loadboard-wrapper {
+  background-color: var(--brand-50);
 }
 
-.section-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--brand-900);
-}
 
-.feature-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--brand-700);
-}
-
-.feature-description {
-  font-size: 1.125rem;
-  color: var(--neutral-600);
+.loadboard-container {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('/public/images/pexels-markie-mad-336302786-14048025') center/cover no-repeat;
+  border-radius: 2rem;
 }
 
 .loadboard-form-card {
-  background: var(--white);
-  border: 1px solid var(--brand-200);
+  border-radius: 2.5rem;
+  border-top-left-radius: 4rem;
 }
 
-.form-title {
-  font-size: 1.5rem;
+.custom-btn {
+  /* background-color: #f26522; */
+  border: none;
   font-weight: 600;
-  color: var(--brand-800);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
 }
-
-.btn-search-loads {
-  background-color: var(--brand-primary);
-  border-color: var(--brand-primary);
-  font-size: 1.125rem;
-  padding: 0.75rem 1rem;
+.custom-btn {
+  background-color: var(--brand-600); 
+  color: white;
 }
-
-.btn-search-loads:hover {
+.custom-btn:hover {
+  /* background-color: #e05611; */
   background-color: var(--brand-700);
-  border-color: var(--brand-700);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .section-heading {
-    font-size: 2rem;
-  }
-
-  .form-title {
-    font-size: 1.25rem;
+/* Mobile adjustments */
+@media (max-width: 991.98px) {
+  .loadboard-form-card {
+    margin-top: 2rem;
+    margin-inline: auto;
+    border-radius: 2rem;
   }
 }
-
-
-
-
-
 
 
 /* co2 section */
@@ -1098,6 +1037,7 @@ h1 {
   transition: color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
   color: var(--neutral-50);
+  display: inline-block;
 
   &:hover {
     color: var(--brand-400);
@@ -1118,9 +1058,6 @@ h1 {
 }
 
 .footer-bar {
-  background-color: var(--brand-600);
-  border-radius: 0.75rem;
-
   .footer-bar-row {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -1171,3 +1108,5 @@ h1 {
     }
   }
 }
+
+
